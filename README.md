@@ -2,7 +2,7 @@
 
 A professional Machine Learning project for predicting health insurance premiums based on customer demographics and lifestyle factors.
 
-## 🚀 Features
+##  Features
 - **Exploratory Data Analysis (EDA)**: Comprehensive univariate and bivariate analysis of health factors.
 - **Multiple ML Models**: Support for Linear Regression, Random Forest, and **XGBoost**.
 - **Performance Tracking**: Automated evaluation with R², MAE, and RMSE metrics.
