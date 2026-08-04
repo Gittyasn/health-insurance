@@ -34,7 +34,7 @@ A professional Machine Learning project for predicting health insurance premiums
    streamlit run app.py
    ```
 
-## 📊 Performance
+##  Performance
 - **Selected Model**: XGBoost
 - **R² Score**: ~0.89
 - **Mean Absolute Error (MAE)**: ~$2,500
