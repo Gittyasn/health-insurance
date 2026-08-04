@@ -12,7 +12,7 @@ A professional Machine Learning project for predicting health insurance premiums
     - **Insights**: Interactive visualizations of data trends.
 - **Explainable AI**: Visual feature importance tracking.
 
-## 📁 Project Structure
+##  Project Structure
 - `app.py`: Main Streamlit application.
 - `notebook/analysis.py`: Refactored model training and evaluation script.
 - `notebook/plots/`: Directory containing various analytical visualizations.
