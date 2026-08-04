@@ -20,7 +20,7 @@ A professional Machine Learning project for predicting health insurance premiums
 - `insurance.csv`: Primary dataset.
 - `requirements.txt`: Python dependencies.
 
-## 🛠️ How to Use
+### How to Use
 1. **Setup Environment**:
    ```bash
    pip install -r requirements.txt
