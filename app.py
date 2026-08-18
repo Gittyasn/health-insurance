@@ -102,7 +102,7 @@ if app_mode == "🏠 Home Dashboard" and model_info:
     fig = px.bar(metrics_df, x='index', y='Significance (R2)', color='Significance (R2)', 
                  title="Performance Comparison (R²)", labels={"index": "Method", "Significance (R2)": "R²"},
                  template="plotly_dark")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 elif app_mode == "🔍 Individual Estimation" and model:
     st.title("🔍 Estimate Annual Charges")
@@ -175,13 +175,13 @@ elif app_mode == "📈 Data Trends":
     with tab1:
         st.subheader("Distribution of Annual Charges")
         if os.path.exists("notebook/plots/target_distribution.png"):
-            st.image("notebook/plots/target_distribution.png", use_container_width=True)
+            st.image("notebook/plots/target_distribution.png", width="stretch")
         else: st.warning("Trend plot not available. Run full analysis first.")
 
     with tab2:
         st.subheader("Data Categorization")
         if os.path.exists("notebook/plots/pairplot.png"):
-            st.image("notebook/plots/pairplot.png", use_container_width=True)
+            st.image("notebook/plots/pairplot.png", width="stretch")
         else: st.warning("Analytical plot not available. Run full analysis first.")
 
     with tab3:
@@ -192,13 +192,13 @@ elif app_mode == "📈 Data Trends":
                                  size='bmi', hover_data=['region'], 
                                  title=f"{col_x.capitalize()} vs Charges",
                                  template="plotly_dark")
-            st.plotly_chart(fig_int, use_container_width=True)
+            st.plotly_chart(fig_int, width="stretch")
         else: st.error("CSV source not found for interactive analysis.")
 
     with tab4:
         st.subheader("Variable Correlations")
         if os.path.exists("notebook/plots/correlation_heatmap.png"):
-            st.image("notebook/plots/correlation_heatmap.png", use_container_width=True)
+            st.image("notebook/plots/correlation_heatmap.png", width="stretch")
 
 elif app_mode == "📂 Data Batch Processing":
     st.title("📂 Batch Data Processing")
@@ -208,7 +208,7 @@ elif app_mode == "📂 Data Batch Processing":
     if uploaded_file is not None:
         raw_df = pd.read_csv(uploaded_file)
         st.success(f"Loaded {len(raw_df)} records.")
-        st.dataframe(raw_df.head(), use_container_width=True)
+        st.dataframe(raw_df.head(), width="stretch")
         
         if st.button("Calculate Batch Estimates"):
             with st.spinner("Processing records..."):
@@ -223,14 +223,14 @@ elif app_mode == "📂 Data Batch Processing":
                     
                     st.divider()
                     st.subheader("✅ Processed Output")
-                    st.dataframe(raw_df, use_container_width=True)
+                    st.dataframe(raw_df, width="stretch")
                     
                     col_res1, col_res2 = st.columns(2)
                     with col_res1:
                         fig_batch = px.histogram(raw_df, x="estimated_charges", marginal="box", 
                                                  title="Distribution of Estimates", color_discrete_sequence=['#3b82f6'],
                                                  template="plotly_dark")
-                        st.plotly_chart(fig_batch, use_container_width=True)
+                        st.plotly_chart(fig_batch, width="stretch")
                     with col_res2:
                         csv = raw_df.to_csv(index=False).encode('utf-8')
                         st.markdown("### Export Results")
