@@ -1,4 +1,4 @@
-# 🩺 Health Insurance Charges Prediction System
+#  Health Insurance Charges Prediction System
 
 A professional Machine Learning project for predicting health insurance premiums based on customer demographics and lifestyle factors.
 
