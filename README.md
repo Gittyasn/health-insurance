@@ -65,7 +65,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Performance
+##  Performance
 The models were evaluated on an 80-20 train-test split:
 - **Selected Best Model**: XGBoost
 - **$R^2$ Score**: `0.8929`
