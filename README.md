@@ -28,7 +28,7 @@ A professional Machine Learning project for predicting health insurance premiums
 
 ---
 
-## 🛠️ How to Use
+##  How to Use
 
 ### 1. Setup Virtual Environment
 It is highly recommended to use the included virtual environment (`.venv`) to ensure all executable scripts and dependencies are correctly resolved.
