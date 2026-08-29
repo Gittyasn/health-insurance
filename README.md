@@ -11,7 +11,7 @@ A professional Machine Learning project for predicting health insurance premiums
 - **Interactive Dashboard**: A premium, dark-themed Streamlit application for:
     - ** Home Dashboard**: Comparison of models and performance metrics.
     - ** Individual Estimation**: Real-time estimation with AI-guided health suggestions.
-    - **📈 Data Trends**: Interactive Scatter, Distribution, Categorical, and Correlation plots.
+    - ** Data Trends**: Interactive Scatter, Distribution, Categorical, and Correlation plots.
     - **📂 Batch Processing**: Upload raw CSV data to calculate bulk estimates and download as a processed CSV.
 - **Explainable AI**: Real-time explanation and warning flags based on user input.
 
