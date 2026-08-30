@@ -17,7 +17,7 @@ A professional Machine Learning project for predicting health insurance premiums
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 - `app.py`: Main Streamlit application with a custom premium theme.
 - `notebook/analysis.py`: Data cleaning, EDA visualization generation, model training, and evaluation script.
 - `notebook/plots/`: Directory containing generated dark-themed visualizations.
